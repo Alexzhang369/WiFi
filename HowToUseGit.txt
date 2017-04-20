@@ -1,0 +1,11 @@
+1.初始化
+
+git init
+
+git config --global user.name "username"
+
+git config --global user.email "email"
+
+2.从github上克隆项目源码
+
+git clone https://github.com/Alexzhang369/WiFi
