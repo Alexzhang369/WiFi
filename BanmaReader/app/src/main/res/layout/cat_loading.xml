@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/grey"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/mouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/mouse" />
+
+            <RelativeLayout
+                android:id="@+id/loading_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/cat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/cat" />
+
+                <ImageView
+                    android:id="@+id/eye_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3.5dp"
+                    android:layout_marginTop="12.5dp"
+                    android:src="@drawable/eyes" />
+
+                <com.codingbingoZTT.BanmaReader.view.loadingview.EyelidView
+                    android:id="@+id/eyelid_left"
+                    android:layout_width="24dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="3.5dp"
+                    android:layout_marginTop="12.5dp"
+                    android:src="@drawable/eyes" />
+
+                <ImageView
+                    android:id="@+id/eye_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="12.5dp"
+                    android:src="@drawable/eyes" />
+
+                <com.codingbingoZTT.BanmaReader.view.loadingview.EyelidView
+                    android:id="@+id/eyelid_right"
+                    android:layout_width="24dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="12.5dp"
+                    android:src="@drawable/eyes" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/loading_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="0 %"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <com.codingbingoZTT.BanmaReader.view.loadingview.GraduallyTextView
+            android:id="@+id/graduallyTextView"
+            android:layout_width="110dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="L O A D I N G ..."
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

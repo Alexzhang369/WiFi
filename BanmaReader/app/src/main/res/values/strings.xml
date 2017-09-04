@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">斑马听书</string>
+    <string name="add_book">添加图书</string>
+    <string name="book_new">新添加</string>
+
+    <string name="local_file_list">本地文件</string>
+    <string name="add_local_file">本地书籍查看及导入</string>
+    <string name="feedback">意见反馈     UI框架等部分:codingbingo@gmail.com      TXT文字转语音等部分:1563149489@qq.com</string>
+    <string name="about">关于斑马听书--V1.0版本</string>
+
+    <string name="chapter_list">章节列表</string>
+    <string name="delete">删除</string>
+</resources>
